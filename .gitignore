@@ -1,0 +1,267 @@
+# ==============================================
+# MOZBOT FULL PACKAGE - COMPREHENSIVE GITIGNORE
+# ==============================================
+
+# OS generated files
+.DS_Store
+.DS_Store?
+._*
+.Spotlight-V100
+.Trashes
+ehthumbs.db
+Thumbs.db
+*~
+*.swp
+*.swo
+
+# IDE and Editor files
+.vscode/
+.idea/
+*.sublime-*
+*.code-workspace
+*.suo
+*.ntvs*
+*.njsproj
+*.sln
+
+# ==============================================
+# FRONTEND (REACT/VITE) - mozbot-admin & mozbot-widget
+# ==============================================
+
+# Dependencies
+**/node_modules/
+**/.pnpm-store/
+.npm
+.yarn-integrity
+
+# Build outputs
+**/dist/
+**/build/
+*.tsbuildinfo
+
+# Vite specific
+**/.vite/
+
+# Package manager logs
+npm-debug.log*
+yarn-debug.log*
+yarn-error.log*
+pnpm-debug.log*
+lerna-debug.log*
+
+# Runtime data
+pids
+*.pid
+*.seed
+*.pid.lock
+**/pids.txt
+
+# Coverage
+coverage/
+*.lcov
+.nyc_output
+
+# ESLint cache
+.eslintcache
+
+# Parcel cache
+.cache
+.parcel-cache
+
+# ==============================================
+# BACKEND (PYTHON/FLASK) - mozbot-backend
+# ==============================================
+
+# Byte-compiled / optimized / DLL files
+**/__pycache__/
+*.py[cod]
+*$py.class
+*.so
+
+# C extensions
+*.so
+
+# Distribution / packaging
+.Python
+build/
+develop-eggs/
+downloads/
+eggs/
+.eggs/
+lib/
+lib64/
+parts/
+sdist/
+var/
+wheels/
+share/python-wheels/
+*.egg-info/
+.installed.cfg
+*.egg
+MANIFEST
+
+# PyInstaller
+*.manifest
+*.spec
+
+# Installer logs
+pip-log.txt
+pip-delete-this-directory.txt
+
+# Unit test / coverage reports
+htmlcov/
+.tox/
+.nox/
+.coverage
+.coverage.*
+nosetests.xml
+coverage.xml
+*.cover
+*.py,cover
+.hypothesis/
+.pytest_cache/
+cover/
+
+# Translations
+*.mo
+*.pot
+
+# Flask stuff
+**/instance/
+.webassets-cache
+
+# Database files
+*.db
+*.sqlite
+*.sqlite3
+**/database/
+**/database/*.db
+mozbot-project/mozbot-platform-configured/home/ubuntu/upload/mozbot-backend/database/
+mozbot-project/mozbot-platform-configured/home/ubuntu/upload/mozbot-backend/instance/
+
+# Virtual environments
+.env
+.venv
+env/
+venv/
+ENV/
+env.bak/
+venv.bak/
+
+# pyenv
+.python-version
+
+# Celery stuff
+celerybeat-schedule
+celerybeat.pid
+
+# ==============================================
+# WORDPRESS PLUGIN - mozbot-wordpress-plugin
+# ==============================================
+
+# WordPress core files
+wp-config.php
+wp-config-sample.php
+wp-load.php
+wp-blog-header.php
+wp-cron.php
+wp-links-opml.php
+wp-mail.php
+wp-settings.php
+wp-signup.php
+wp-trackback.php
+xmlrpc.php
+
+# WordPress content directories
+wp-content/uploads/
+wp-content/backup-db/
+wp-content/cache/
+wp-content/upgrade/
+
+# WordPress logs
+error_log
+debug.log
+wp-config-local.php
+
+# ==============================================
+# ENVIRONMENT & CONFIG
+# ==============================================
+
+# Environment variables
+.env
+.env.local
+.env.development.local
+.env.test.local
+.env.production.local
+.env.*.local
+
+# Local configuration files
+config.local.js
+config.local.json
+
+# ==============================================
+# LOGS & TEMPORARY FILES
+# ==============================================
+
+# Logs
+*.log
+logs/
+
+# Temporary files
+tmp/
+temp/
+*.tmp
+*.temp
+*.bak
+
+# ==============================================
+# COMPRESSED FILES
+# ==============================================
+
+# Keep the main zip file but ignore others
+mozbot-platform-configured.zip
+!mozbot-platform-configured.zip
+*.zip
+*.tar.gz
+*.rar
+
+# ==============================================
+# DEVELOPMENT TOOLS
+# ==============================================
+
+# Lock files (keeping for reproducible builds)
+# Uncomment if you want to ignore lock files:
+# **/package-lock.json
+# **/yarn.lock
+# **/pnpm-lock.yaml
+
+# mypy
+.mypy_cache/
+.dmypy.json
+dmypy.json
+
+# Pyre type checker
+.pyre/
+
+# pytype static type analyzer
+.pytype/
+
+# Jupyter Notebook checkpoints
+.ipynb_checkpoints
+
+# Spyder project settings
+.spyderproject
+.spyproject
+
+# Rope project settings
+.ropeproject
+
+# mkdocs documentation
+/site
+
+# ==============================================
+# PROJECT SPECIFIC IGNORES
+# ==============================================
+
+# Keep setup script
+!setup_and_run.sh
