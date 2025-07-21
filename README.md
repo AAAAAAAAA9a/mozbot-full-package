@@ -9,13 +9,10 @@ mozbot-full-package/
 ├── .gitignore                          # Main Git ignore file
 ├── setup_and_run.sh                   # Setup and deployment script  
 ├── README.md                           # This file
-└── mozbot-project/
-    └── mozbot-platform-configured/
-        └── home/ubuntu/upload/
-            ├── mozbot-admin/           # React admin dashboard
-            ├── mozbot-backend/         # Python Flask API
-            ├── mozbot-widget/          # React widget component  
-            └── mozbot-wordpress-plugin/ # WordPress plugin
+├── mozbot-admin/                       # React admin dashboard
+├── mozbot-backend/                     # Python Flask API
+├── mozbot-widget/                      # React widget component  
+└── mozbot-wordpress-plugin/            # WordPress plugin
 ```
 
 ## Components
@@ -86,12 +83,12 @@ chmod +x setup_and_run.sh
 
 ```bash
 # Navigate to admin
-cd mozbot-project/mozbot-platform-configured/home/ubuntu/upload/mozbot-admin
+cd mozbot-admin
 pnpm install
 pnpm dev
 
 # Navigate to widget  
-cd ../mozbot-widget
+cd mozbot-widget
 pnpm install
 pnpm dev
 ```
@@ -100,7 +97,7 @@ pnpm dev
 
 ```bash
 # Navigate to backend
-cd mozbot-project/mozbot-platform-configured/home/ubuntu/upload/mozbot-backend
+cd mozbot-backend
 
 # Create virtual environment
 python -m venv venv
