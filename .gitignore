@@ -136,8 +136,8 @@ cover/
 *.sqlite3
 **/database/
 **/database/*.db
-mozbot-project/mozbot-platform-configured/home/ubuntu/upload/mozbot-backend/database/
-mozbot-project/mozbot-platform-configured/home/ubuntu/upload/mozbot-backend/instance/
+mozbot-backend/database/
+mozbot-backend/instance/
 
 # Virtual environments
 .env
