@@ -72,9 +72,13 @@ mozbot-full-package/
 git clone <your-repo-url>
 cd mozbot-full-package
 
-# Run the setup script
-chmod +x setup_and_run.sh
-./setup_and_run.sh
+# One-command setup (installs all dependencies)
+chmod +x quick-setup.sh
+./quick-setup.sh
+
+# Start all development servers
+chmod +x dev-start.sh  
+./dev-start.sh
 ```
 
 ### Manual Setup
