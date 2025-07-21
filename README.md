@@ -21,15 +21,17 @@ mozbot-full-package/
 ## Components
 
 ### 🎛️ Mozbot Admin (`mozbot-admin/`)
+
 - **Tech Stack**: React 19, Vite, TailwindCSS, Radix UI
 - **Purpose**: Administrative dashboard for managing chatbots
 - **Package Manager**: pnpm
-- **Key Features**: 
+- **Key Features**:
   - Chatbot management
   - Analytics dashboard  
   - User interface components
 
 ### 🤖 Mozbot Widget (`mozbot-widget/`)
+
 - **Tech Stack**: React 19, Vite, TailwindCSS
 - **Purpose**: Embeddable chat widget
 - **Package Manager**: pnpm
@@ -39,6 +41,7 @@ mozbot-full-package/
   - Easy website integration
 
 ### 🔧 Mozbot Backend (`mozbot-backend/`)
+
 - **Tech Stack**: Python, Flask, SQLAlchemy, JWT
 - **Purpose**: REST API and database management
 - **Key Features**:
@@ -48,6 +51,7 @@ mozbot-full-package/
   - Automation services
 
 ### 🔌 Mozbot WordPress Plugin (`mozbot-wordpress-plugin/`)
+
 - **Tech Stack**: PHP, WordPress
 - **Purpose**: WordPress integration plugin
 - **Key Features**:
@@ -58,12 +62,14 @@ mozbot-full-package/
 ## Getting Started
 
 ### Prerequisites
+
 - Node.js (v18+)
 - Python (v3.8+)
 - pnpm package manager
 - Git
 
 ### Quick Setup
+
 ```bash
 # Clone the repository
 git clone <your-repo-url>
@@ -77,6 +83,7 @@ chmod +x setup_and_run.sh
 ### Manual Setup
 
 #### Frontend (Admin & Widget)
+
 ```bash
 # Navigate to admin
 cd mozbot-project/mozbot-platform-configured/home/ubuntu/upload/mozbot-admin
@@ -90,6 +97,7 @@ pnpm dev
 ```
 
 #### Backend
+
 ```bash
 # Navigate to backend
 cd mozbot-project/mozbot-platform-configured/home/ubuntu/upload/mozbot-backend
@@ -108,18 +116,21 @@ python src/main.py
 ## Development
 
 ### Frontend Development
+
 - Both admin and widget use **Vite** for fast development
 - **TailwindCSS** for styling with custom components
 - **Radix UI** for accessible component primitives
 - **React Router** for navigation
 
 ### Backend Development  
+
 - **Flask** with SQLAlchemy ORM
 - **JWT** authentication
 - **CORS** enabled for frontend integration
 - **Modular architecture** with services and routes
 
 ### WordPress Plugin
+
 - Standard WordPress plugin structure
 - Admin interface integration
 - Hook-based architecture
@@ -127,6 +138,7 @@ python src/main.py
 ## Deployment
 
 The project includes a `setup_and_run.sh` script for automated deployment. This script:
+
 - Sets up all required dependencies
 - Configures the database
 - Starts all services
@@ -137,6 +149,7 @@ The project includes a `setup_and_run.sh` script for automated deployment. This 
 Create `.env` files in the respective directories:
 
 **Backend** (`mozbot-backend/.env`):
+
 ```env
 FLASK_ENV=development
 SECRET_KEY=your-secret-key
@@ -145,6 +158,7 @@ JWT_SECRET_KEY=your-jwt-secret
 ```
 
 **Frontend** (`.env.local`):
+
 ```env
 VITE_API_URL=http://localhost:5000
 VITE_APP_TITLE=Mozbot Admin
